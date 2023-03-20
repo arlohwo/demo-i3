@@ -1,0 +1,11 @@
+<view wx:for="{{playerList}}" class="playerList">
+  <view class="avatarandNameBox">
+    <image src="{{item.img}}" class="avatarStyle"/>
+    <text class="nameStyle">{{item.name}}</text>
+  </view>
+  <view class="winandLossRateBox">
+    <text style="margin-left: 20px;"> 胜场：{{item.win}}\n败场：{{item.loss}}\n胜率：{{item.winRate}}%
+    </text>
+  </view>
+</view>
+<!--ss-->

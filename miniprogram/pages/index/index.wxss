@@ -1,0 +1,29 @@
+.playerList{
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  margin: 20px;
+  box-shadow: 0 0 5px;
+}
+.avatarandNameBox{
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+}
+.avatarStyle{
+  height: 70px;
+  width: 70px;
+  border-radius: 90px;
+}
+.nameStyle{
+  font-size: 15px;
+  margin-top: 5px
+}
+.winandLossRateBox{
+  display: flex;
+  flex-direction: row;
+  justify-self: center;
+  align-items: center;
+}
