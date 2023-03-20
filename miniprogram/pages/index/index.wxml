@@ -1,11 +1,41 @@
-<view wx:for="{{playerList}}" class="playerList">
-  <view class="avatarandNameBox">
-    <image src="{{item.img}}" class="avatarStyle"/>
-    <text class="nameStyle">{{item.name}}</text>
+
+  <view class="banner">
+    <view class="banner_item">
+      <text class="banner_item_text">排名</text>
+    </view>
+    <view class="banner_item">
+      <text class="banner_item_text">名字</text>
+    </view>
+    <view class="banner-item">
+      <text class="banner_item_text">场次</text>
+    </view>
+    <view class="banner-item">
+      <text class="banner_item_text">胜场</text>
+    </view>
+    <view class="banner-item">
+      <text class="banner_item_text">负场</text>
+    </view>
+    <view class="banner-item">
+      <text class="banner_item_text">胜率</text>
+    </view>
   </view>
-  <view class="winandLossRateBox">
-    <text style="margin-left: 20px;"> 胜场：{{item.win}}\n败场：{{item.loss}}\n胜率：{{item.winRate}}%
-    </text>
-  </view>
+
+  <view wx:for="{{playerList}}" class="playerList">
+    <text class="banner_item_text width">{{index + 1}}</text>
+    <view class="banner_item">
+      <image src="{{item.img}}" class="avatarStyle" />
+      <text class="nameStyle">{{item.name}}</text>
+    </view>
+    <view class="banner_item font-size">
+      <text>{{item.total}}</text>
+    </view>
+    <view class="banner_item font-size">
+      <text>{{item.win}}</text>
+    </view>
+    <view class="banner_item font-size">
+      <text>{{item.loss}}</text>
+    </view>
+    <view class="banner_item font-size">
+      <text>{{item.winRate}}%</text>
+    </view>
 </view>
-<!--ss-->

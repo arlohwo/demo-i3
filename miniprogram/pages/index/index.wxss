@@ -1,29 +1,35 @@
-.playerList{
-  padding: 10px;
+.banner {
   display: flex;
   flex-direction: row;
-  border-radius: 20px;
-  margin: 20px;
-  box-shadow: 0 0 5px;
+  justify-content: space-between;
+  background-color: #888888;
+  padding: 5px;
 }
-.avatarandNameBox{
+.banner_item {
   display: flex;
-  flex-direction: column;
-  justify-self: center;
+  flex-direction: row;
   align-items: center;
 }
+.banner_item_text {
+  font-size: 14px;
+  color: #333;
+}
+.playerList{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px;
+  width: 100%;
+}
 .avatarStyle{
-  height: 70px;
-  width: 70px;
+  height: 25px;
+  width: 25px;
   border-radius: 90px;
 }
 .nameStyle{
-  font-size: 15px;
+  font-size: 10px;
   margin-top: 5px
 }
-.winandLossRateBox{
-  display: flex;
-  flex-direction: row;
-  justify-self: center;
-  align-items: center;
+.font-size{
+  font-size: 10px;
 }
